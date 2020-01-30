@@ -6,7 +6,6 @@ h1{
  color: blue;
  font-family: Georgia;
  text-transform: uppercase;
- text-align: center;
 }
 h2{
  color: red;
@@ -27,6 +26,12 @@ p{
   padding: 5px;
   border: 1px solid blue;
   background-color: lightyellow;
+}
+.center{
+ text-align: center;
+}
+.left{
+ text-align: left;
 }
 img {
   display: block;
