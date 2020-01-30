@@ -1,6 +1,7 @@
 h1{
  color: blue;
  font-family: Georgia;
+ text-transform: capitalize;
 }
 h2{
  color: red;
