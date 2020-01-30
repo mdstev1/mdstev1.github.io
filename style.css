@@ -45,7 +45,7 @@ img {
 }
 div{
  background-color: lightyellow;
- max-width: 50%;
+ max-width: 500px;
  display: block;
 }
 hr.solid {
