@@ -30,7 +30,7 @@ p{
 .center{
  text-align: center;
 }
-.left{
+.left, .home{
  text-align: left;
 }
 img {
