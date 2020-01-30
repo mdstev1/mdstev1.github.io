@@ -21,8 +21,8 @@ p{
   text-transform: capitalize;
 }
 .span{
-  display: inline-block;
+  display: inline;
   padding: 5px;
   border: 1px solid blue;
-  background-color: beige;
+  background-color: lightyellow;
 }
