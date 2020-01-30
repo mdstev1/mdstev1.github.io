@@ -45,6 +45,7 @@ img {
 }
 div{
  background-color: lightyellow;
+ width: 50%
 }
 hr.solid {
   border-top: 3px solid #bbb;
