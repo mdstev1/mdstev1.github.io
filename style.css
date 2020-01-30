@@ -44,5 +44,8 @@ img {
   padding: 5px;;
 }
 div{
- color: lightyellow;
+ background-color: lightyellow;
+}
+hr.solid {
+  border-top: 3px solid #bbb;
 }
