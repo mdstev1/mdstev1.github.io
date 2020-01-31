@@ -44,8 +44,11 @@ hr.solid {
 }
 .header{
  background-color: lightgrey;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ right: 0px;
  width: 100%;
- 
 }
 .Michael{
  background-color: lightyellow;
@@ -55,13 +58,13 @@ hr.solid {
 }
 .Izaak{
  background-color: lightyellow;
- align: right;
+ text-align: left;
  display: block;
  width: 50%;
 }
 .Bryce{
  background-color: lightyellow;
- align: center;
+ text-align: left;
  display: block;
  width: 50%;
 }
