@@ -53,6 +53,8 @@ hr.solid {
  text-align: left;
  display: block;
  width: 50%;
+ padding: 5px;
+ border: 1px solid;
 }
 .Izaak{
  background-color: lightyellow;
@@ -60,11 +62,15 @@ hr.solid {
  text-align: left;
  display: block;
  width: 50%;
+ padding: 5px;
+ border: 1px solid;
 }
 .Bryce{
  background-color: lightyellow;
  text-align: left;
  display: block;
  width: 50%;
+ padding: 5px;
+ border: 1px solid;
 }
 
