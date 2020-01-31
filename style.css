@@ -46,6 +46,9 @@ hr.solid {
 }
 .header{
  role: banner;
+ top: 0px;
+ left: 0px;
+ right: 0px;
  background-color: lightgrey;
  width: 100%;
 }
@@ -69,7 +72,6 @@ hr.solid {
 }
 .Bryce{
  background-color: lightyellow;
- 
  width: 33%;
  text-align: left;
  display: block;
