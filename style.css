@@ -43,6 +43,7 @@ hr.solid {
   border-top: 3px solid #bbb;
 }
 .header{
+ role: banner;
  background-color: lightgrey;
  top: 0px;
  left: 0px;
