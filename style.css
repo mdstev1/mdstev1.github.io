@@ -50,34 +50,15 @@ hr.solid {
  background-color: #f1f1f1;
  padding: 20px 10px;
 }
-.Michael{
+.Michael, .Izaak, .Bryce{
  background-color: lightyellow;
  position: relative;
- width: 30%;
+ width: 32%;
  height=100px
  text-align: left;
  display: inline-block;
  padding: 5px;
  border: 1px solid;
 }
-.Izaak{
- background-color: lightyellow;
- position: relative;
- width: 30%;
- height=100px
- text-align: left;
- display: inline-block;
- padding: 5px;
- border: 1px solid;
-}
-.Bryce{
- background-color: lightyellow;
- position: relative;
- width: 30%;
- height=100px
- text-align: left;
- display: inline-block;
- padding: 5px;
- border: 1px solid;
-}
+
 
