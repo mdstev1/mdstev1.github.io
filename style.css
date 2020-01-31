@@ -25,10 +25,10 @@ p{
 .capitalize{
   text-transform: capitalize;
 }
-.center{
+.textcenter{
  text-align: center;
 }
-.left, .home{
+.textleft, .home{
  text-align: left;
 }
 img {
