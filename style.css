@@ -37,6 +37,7 @@ img {
  padding: 5px;
  position: relative;
  right: 0;
+ max-height: 100%;
 }
 div{
 }
@@ -44,11 +45,6 @@ hr.solid {
   border-top: 3px solid #bbb;
 }
 .header{
- position: relative;
- top: 0px;
- left: 0px;
- right: 0px;
- width: 100%;
  overflow: hidden;
  background-color: #f1f1f1;
  padding: 20px 10px;
