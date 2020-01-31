@@ -38,6 +38,7 @@ img {
  position: relative;
  right: 0;
  max-height: 100%;
+ object-fit: contain;
 }
 div{
 }
@@ -62,7 +63,6 @@ hr.solid {
 .Izaak{
  background-color: lightyellow;
  position: relative;
- align: right;
  width: 30%;
  height=100px
  text-align: left;
