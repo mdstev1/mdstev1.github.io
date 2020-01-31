@@ -53,8 +53,8 @@ hr.solid {
 .Michael, .Izaak, .Bryce{
  background-color: lightyellow;
  position: relative;
- width: 32%;
- height: 100px;
+ vertical-align: top;
+ width: 32.2%;
  text-align: left;
  display: inline-block;
  padding: 5px;
