@@ -48,8 +48,10 @@ hr.solid {
  top: 0px;
  left: 0px;
  right: 0px;
- background-color: lightgrey;
  width: 100%;
+ overflow: hidden;
+ background-color: #f1f1f1;
+ padding: 20px 10px;
 }
 .Michael{
  background-color: lightyellow;
@@ -63,7 +65,7 @@ hr.solid {
 .Izaak{
  background-color: lightyellow;
  position: relative;
- right: 0;
+ align: right;
  width: 33%;
  text-align: left;
  display: inline-block;
@@ -72,6 +74,7 @@ hr.solid {
 }
 .Bryce{
  background-color: lightyellow;
+ position: relative;
  width: 33%;
  text-align: left;
  display: inline-block;
