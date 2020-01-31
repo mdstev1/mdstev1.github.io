@@ -25,12 +25,6 @@ p{
 .capitalize{
   text-transform: capitalize;
 }
-.span{
-  display: inline;
-  padding: 5px;
-  border: 1px solid blue;
-  background-color: lightyellow;
-}
 .center{
  text-align: center;
 }
