@@ -51,3 +51,6 @@ div{
 hr.solid {
   border-top: 3px solid #bbb;
 }
+.header{
+ background-color: navy;
+}
