@@ -44,9 +44,6 @@ img {
   padding: 5px;;
 }
 div{
- background-color: lightyellow;
- max-width: 500px;
- display: block;
 }
 hr.solid {
   border-top: 3px solid #bbb;
@@ -54,3 +51,19 @@ hr.solid {
 .header{
  background-color: Blue;
 }
+.Michael{
+ background-color: lightyellow;
+ align: left;
+ display: block;
+}
+.Izaak{
+ background-color: lightyellow;
+ align: right;
+ display: block;
+}
+.Bryce{
+ background-color: lightyellow;
+ align: center;
+ display: block;
+}
+
