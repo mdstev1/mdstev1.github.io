@@ -72,3 +72,7 @@ hr.solid {
   width: 150px;
   border: 1px solid;
 }
+button{
+  height: 50px;
+  width: 100px;
+}
