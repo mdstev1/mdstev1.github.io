@@ -18,7 +18,7 @@ function Calc() {
     else if(document.getElementById("kilometers").checked==true){
     ft=ft*3280.84;
         }  
- var ans=0
+ var ans
   
   if(document.getElementById("inches2").checked==true){
     ans=ft*12;
