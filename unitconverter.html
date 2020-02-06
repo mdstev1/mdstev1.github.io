@@ -5,22 +5,53 @@
     <link href="style.css" type="text/css" rel="stylesheet">
   </head>
 
-  <body>
+<script src="unitconverter.js"></script>
+<body>
+  <div class="textcenter">
     <div class="header">
       <h1 class="home"><a href="index.html">Home</a></h1>
     </div>
     <hr class="solid">
     <h1>Distance Converter</h1>
-    
-    <p>
-      Distance Converter
-    </p>
-    <form>
+  <br>
+
+  <div class="convert">
   Convert: 
+    <input type="number" id="number" class="textcenter">
+  </div>
+  <div class="input">
+    <input type="radio" name="input" id="inches"> inches<br>
+    <input type="radio" name="input" id="feet"> feet<br>
+    <input type="radio" name="input" id="yards"> yards<br>
+    <input type="radio" name="input" id="miles"> miles<br>
+    <input type="radio" name="input" id="meters"> meters<br>
+    <input type="radio" name="input" id="kilometers"> kilometers<br>
+  </div>
+  <div class="input"      
+       <p>to:</p>
+  </div>
+  <div class="output">
+    <input type="radio" name="output" id="inches2"> inches<br>
+    <input type="radio" name="output" id="feet2"> feet<br>
+    <input type="radio" name="output" id="yards2"> yards<br>
+    <input type="radio" name="output" id="miles2"> miles<br>
+    <input type="radio" name="output" id="meters2"> meters<br>
+    <input type="radio" name="output" id="kilometers2"> kilometers<br>
+  </div>
 
-    
+  <br><br>
 
+  <input type=button value="Calculate" class="textcenter"
+         onClick="Calc();">
+  <br><br>
+         
+<div class="output textcenter">
+  Answer:
+  <output class="output box textcenter" id="answer">
 
-
-  </body>
+  </output>
+</div>  
+</div>
+      
+</body>
 </html>
