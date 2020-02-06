@@ -60,5 +60,15 @@ hr.solid {
  padding: 5px;
  border: 1px solid;
 }
-
-
+.output, .input, .convert{
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  max-width: 30%;
+  display: inline-block;
+  padding: 10px;
+}
+.box{
+  width: 150px;
+  border: 1px solid;
+}
