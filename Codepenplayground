@@ -6,14 +6,24 @@ function myFunc(){
   myDIV.innerHTML="<b>New Text!</b>"
 }
 
-function Calc(input, output) {
-  var i = document.getElementById("output");
-  if ("inches"=1) {output=number*12
- 
-} else if (input="yards") {output=number/3
+function Calc() {
+ var ft=document.getElementById("number").value
+  if(document.getElementById("inches").checked==true){
+    ft=ft/12;
+  }
+else if(document.getElementById("feet").checked==true){
+    ft=ft;
 }
-  var myDIV=document.getElementById('number')
-  myDIV.innerHTML=ans
+var ans=ft
+  if(document.getElementById("inches2").checked==true){
+    ans=ans*12;
+  }
+  else if(document.getElementById("inches2").checked==true){
+    ans=ans;
+  }
+  
+  var div = document.getElementById('answer')
+  div.innerHTML=ans
 }
 
 
@@ -24,11 +34,12 @@ function Calc(input, output) {
 HTML
 
 
+<!--
 <input type = button value = "Do It!"
        onClick = "myFunc();">
 
 <div id="txt"> Plain Text</div>
-
+-->
 
 <h1>
       Distance Converter
@@ -37,37 +48,33 @@ HTML
   Convert: 
     
     <input type="number" id="number">
-   <div id="i">
-    <input type="radio" name="input" value="inches"> inches
-    <input type="radio" name="input" value="feet"> feet
-    <input type="radio" name="input" value="yards"> yards
-    <input type="radio" name="input" value="miles"> miles
-    <input type="radio" name="input" value="meters"> meters
-    <input type="radio" name="input" value="kilometers"> kilometers
-
+ <div>
+    <input type="radio" name="input" id="inches"> inches
+    <input type="radio" name="input" id="feet"> feet
+    <input type="radio" name="input" id="yards"> yards
+    <input type="radio" name="input" id="miles"> miles
+    <input type="radio" name="input" id="meters"> meters
+    <input type="radio" name="input" id="kilometers"> kilometers
   </div>
-  <br><br>
+  <br>
         to:
   <br><br>
   <div id="output">
-    <input type="radio" name="output" id="inches"> inches
-    <input type="radio" name="output" id="feet"> feet
-    <input type="radio" name="output" id="yards"> yards
-    <input type="radio" name="output" id="miles"> miles
-    <input type="radio" name="output" id="meters"> meters
-    <input type="radio" name="output" id="kilometers"> kilometers
+    <input type="radio" name="output" id="inches2"> inches
+    <input type="radio" name="output" id="feet2"> feet
+    <input type="radio" name="output" id="yards2"> yards
+    <input type="radio" name="output" id="miles2"> miles
+    <input type="radio" name="output" id="meters2"> meters
+    <input type="radio" name="output" id="kilometers2"> kilometers
   </div>
-  <br><br>
-  <input type=button value="Calculate"
-         onClick="Calc;">
+
   <br><br>
 
-  <div id=ans>
-  </div>
+  <input type=button value="Calculate"
+         onClick="Calc();">
+  <br><br>
          
 
-<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-  ="ans";
-</script></output>
-  </form>
-      
+<div id="answer">
+  1
+</div>
