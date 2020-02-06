@@ -18,25 +18,25 @@ function Calc() {
     else if(document.getElementById("kilometers").checked==true){
     ft=ft*3280.84;
         }  
- var ans=ft
+ var ans=0
   
   if(document.getElementById("inches2").checked==true){
-    ans=ans*12;
+    ans=ft*12;
         }
     else if(document.getElementById("feet2").checked==true){
-    ans=ans;
+    ans=ft;
         }
     else if(document.getElementById("yards2").checked==true){
-    ans=ans/3;
+    ans=ft/3;
         }
     else if(document.getElementById("miles2").checked==true){
-    ans=ans/5280;
+    ans=ft/5280;
         }
     else if(document.getElementById("meters2").checked==true){
-    ans=ans/3.28084;
+    ans=ft/3.28084;
         }
     else if(document.getElementById("kilometers2").checked==true){
-    ans=ans/3280.84;
+    ans=ft/3280.84;
         } 
   
   if(ans%1==0){
