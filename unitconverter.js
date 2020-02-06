@@ -50,6 +50,6 @@ function Calc() {
 }
 
 function Pic() {
-var pic = "https://media.giphy.com/media/oBPOP48aQpIxq/giphy.gif"
+var pic = "ThumbsUpChuck.gif"
   document.getElementById('picture').src = pic.replace('90x90', '225x225');
 }
