@@ -38,19 +38,21 @@
     <input type="radio" name="output" id="meters2"> meters<br>
     <input type="radio" name="output" id="kilometers2"> kilometers<br>
   </div>
-
-  <br><br>
-
-  <input type=button value="Calculate" class="textcenter"
-         onClick="Calc();">
-  <br><br>
-         
-<div class="output textcenter">
+  <div class="output textcenter">
   Answer:
-  <output class="output box textcenter" id="answer">
+    <output class="output box textcenter" id="answer">
+    </output>
+  </div>
+  
+  <br><br>
 
-  </output>
-</div>  
+  <button value="Calculate" class="textcenter h1"
+          onClick="Calc(); Pic();"><h2>Calculate</h2></button>
+  <br>
+ 
+  <img id="picture"/>
+    <p>Source: Giphy</p>
+           
 </div>
       
 </body>
