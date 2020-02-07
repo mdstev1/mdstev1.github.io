@@ -1,5 +1,6 @@
 body{
  background-color: lightblue
+ height: 100%;
 }
  
 h1{
@@ -75,4 +76,9 @@ hr.solid {
 button{
   height: 50px;
   width: 100px;
+}
+#map, html{
+  height: 100%;
+  margin: 5;
+  padding: 0;
 }
