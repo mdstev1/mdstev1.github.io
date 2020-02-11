@@ -150,3 +150,4 @@ function initMap() {
     title: 'Air Force Academy'
   });
 }
+*/
