@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   
-  <head>
+<head>
     <link href="style.css" type="text/css" rel="stylesheet">
-  </head>
+</head>
 
 <script src="manning.js"></script>
 <body>
@@ -18,14 +18,14 @@
     Inputs <br>
   <div class="convert">
     Units:<br>
-  <input type="radio" name="input" id="US"> U.S.<br>
-    <input type="radio" name="input" id="SI"> S.I.<br>
+  <input type="radio" name="input" id="US" onClick="ADDunits();"> U.S.<br>
+    <input type="radio" name="input" id="SI" onClick="ADDunits();"> S.I.<br>
     </div>
   <div class="input">
     Manning's n value   <input type="number" id="n" class="textcenter"> <br>
-    Hydraulic Radius   <input type="number" id="R" class="textcenter"> <br>
-    Channel Slope   <input type="number" id="S" class="textcenter"> <br>
-  </div>
+    Hydraulic Radius   <input type="number" id="R" class="textcenter"> <div class="label" id="lunits"> </div> <br>
+    Channel Slope   <input type="number" id="S" class="textcenter"> <div class="label" id="sunits"> </div> <br>
+    </div>
     
   <button value="Calculate" class="textcenter h1"
           onClick="Calc();"><h2>Calculate Velocity</h2></button>
