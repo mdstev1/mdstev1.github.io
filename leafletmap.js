@@ -33,7 +33,7 @@
       [38.9448, -104.7872]
     ]).addTo(map).bindPopup('<p class="bold capitalize incrfontsize">Property Boundaries</p>')
 
-   map.setView([38.925, -104.7874], 11)
+   map.setView([38.925, -104.90], 11)
 
 
 
