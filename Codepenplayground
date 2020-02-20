@@ -1,0 +1,80 @@
+JS
+
+function myFunc(){
+  alert("You clicked it!")
+  var myDIV = document.getElementById('txt')
+  myDIV.innerHTML="<b>New Text!</b>"
+}
+
+function Calc() {
+ var ft=document.getElementById("number").value
+  if(document.getElementById("inches").checked==true){
+    ft=ft/12;
+  }
+else if(document.getElementById("feet").checked==true){
+    ft=ft;
+}
+var ans=ft
+  if(document.getElementById("inches2").checked==true){
+    ans=ans*12;
+  }
+  else if(document.getElementById("inches2").checked==true){
+    ans=ans;
+  }
+  
+  var div = document.getElementById('answer')
+  div.innerHTML=ans
+}
+
+
+
+
+
+
+HTML
+
+
+<!--
+<input type = button value = "Do It!"
+       onClick = "myFunc();">
+
+<div id="txt"> Plain Text</div>
+-->
+
+<h1>
+      Distance Converter
+    </h1>
+<script src="unitconverter.js"></script>
+  Convert: 
+    
+    <input type="number" id="number">
+ <div>
+    <input type="radio" name="input" id="inches"> inches
+    <input type="radio" name="input" id="feet"> feet
+    <input type="radio" name="input" id="yards"> yards
+    <input type="radio" name="input" id="miles"> miles
+    <input type="radio" name="input" id="meters"> meters
+    <input type="radio" name="input" id="kilometers"> kilometers
+  </div>
+  <br>
+        to:
+  <br><br>
+  <div id="output">
+    <input type="radio" name="output" id="inches2"> inches
+    <input type="radio" name="output" id="feet2"> feet
+    <input type="radio" name="output" id="yards2"> yards
+    <input type="radio" name="output" id="miles2"> miles
+    <input type="radio" name="output" id="meters2"> meters
+    <input type="radio" name="output" id="kilometers2"> kilometers
+  </div>
+
+  <br><br>
+
+  <input type=button value="Calculate"
+         onClick="Calc();">
+  <br><br>
+         
+
+<div id="answer">
+  1
+</div>

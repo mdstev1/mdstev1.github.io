@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    
+        <link href="style.css"
+        type="text/css" rel="stylesheet"> 
+      
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+        
+        <script src="leafletmap.js"></script>
+  </head>
+
+    
+  <body>
+    <div class="header">
+      <h1 class="home"><a href="index.html">Home</a></h1>
+    </div>
+    <hr class="solid">
+    <div class="textcenter bold incrfontsize">
+      Michael Stevens<br>
+      Interactive Leaflet Map<br>
+      2/19/2020<br>
+    </div>
+       
+      <div id="map">
+          <script> 
+            var map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([38.958, -104.771]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Church Building</p>Except for some stake reorganizations, this was my stake center for most of my growing up years. Memories of youth activities, campouts, and church ball come to my mind as I remember that building.')
+
+        L.marker([38.949, -104.771]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Rampart High School</p>This was my high school. I played basketball and football here, made some very meaningful friendships, and prepared myself for college. I will not say that I loved it, but it recalls some good memories!')
+
+        L.marker([38.839, -105.042]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Pikes Peak</p>Pikes Peak overlooks the city of Colorado Springs and is often what people associate the city with. I worked on top at the gift shop one summer and hiked it 3 separate times. It is a beautiful view from both the bottom and the top.')
+ 
+        L.marker([39.010, -104.881]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Air Force Academy</p> Since many in our ward were in the Air Force, we would often go onto the Academy to have youth activities. My high school graduation was in the basketball arena.')
+
+        L.marker([38.9446, -104.7874]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">My House</p> This is the house that I grew up in. We moved here when I was 7 years old, so I lived here for about 11 years before leaving for school, plus a couple summers here and there.')
+
+        var circle = L.circle([38.9446, -104.7874], {
+         color: 'red',
+         fillColor: '#f03',
+         fillOpacity: 0.1,
+         radius: 1000
+        }).addTo(map).bindPopup('<p class="bold capitalize incrfontsize">10 Minute Walk Radius</p>')
+    
+        var propline = L.polygon([
+             [38.9447, -104.7878],
+             [38.9444, -104.7878],
+             [38.9444, -104.7873],
+             [38.9448, -104.7872]
+        ]).addTo(map).bindPopup('<p class="bold capitalize incrfontsize">Property Boundaries</p>')
+
+        map.setView([38.925, -104.7874], 12)
+          </script>
+      </div>  
+
+  </body>
+  
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+
+
+
+<script> 
+            var map = L.map('map').setView([51.505, -0.09], 13);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+  L.marker([38.958, -104.771]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Church Building</p>Except for some stake reorganizations, this was my stake center for most of my growing up years. Memories of youth activities, campouts, and church ball come to my mind as I remember that building.')
+
+  L.marker([38.949, -104.771]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Rampart High School</p>This was my high school. I played basketball and football here, made some very meaningful friendships, and prepared myself for college. I will not say that I loved it, but it recalls some good memories!')
+
+  L.marker([38.839, -105.042]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Pikes Peak</p>Pikes Peak overlooks the city of Colorado Springs and is often what people associate the city with. I worked on top at the gift shop one summer and hiked it 3 separate times. It is a beautiful view from both the bottom and the top.')
+ 
+  L.marker([39.010, -104.881]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">Air Force Academy</p> Since many in our ward were in the Air Force, we would often go onto the Academy to have youth activities. My high school graduation was in the basketball arena.')
+
+  L.marker([38.9446, -104.7874]).addTo(map)
+        .bindPopup('<p class="bold capitalize incrfontsize">My House</p> This is the house that I grew up in. We moved here when I was 7 years old, so I lived here for about 11 years before leaving for school, plus a couple summers here and there.')
+
+  var circle = L.circle([38.9446, -104.7874], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.1,
+    radius: 1000
+}).addTo(map).bindPopup('<p class="bold capitalize incrfontsize">10 Minute Walk Radius</p>')
+    
+   var propline = L.polygon([
+      [38.9447, -104.7878],
+      [38.9444, -104.7878],
+      [38.9444, -104.7873],
+      [38.9448, -104.7872]
+    ]).addTo(map).bindPopup('<p class="bold capitalize incrfontsize">Property Boundaries</p>')
+
+   map.setView([38.925, -104.7874], 12)
+          </script>
+-->
+
+
+<!--  
+  <head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+      <title>Google Map</title>
+      <meta name="viewport" content="initial-scale=1.0">
+      <meta charset="utf-8">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI&callback=initMap"
+    async defer>
+    </script>
+    <script src="googlemap.js"></script>
+  </head>
+
+<body>
+    <div class="textcenter">
+    <div class="header">
+      <h1 class="home"><a href="index.html">Home</a></h1>
+    </div>
+    <hr class="solid">
+    <h1>Google Map</h1>
+    </div><br>
+  
+  <div id="map"></div>
+    
+</body>
+-->

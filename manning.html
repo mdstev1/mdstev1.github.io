@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<script src="manning.js"></script>
+<body>
+  <div class="textcenter">
+    <div class="header">
+      <h1 class="home"><a href="index.html">Home</a></h1>
+    </div>
+    <hr class="solid">
+    <h1>Manning's Equation</h1>
+  <br>
+
+
+  <div class="convert">
+    Units:<br>
+  <input type="radio" name="input" id="US" onClick="ADDunits();"> U.S.<br>
+    <input type="radio" name="input" id="SI" onClick="ADDunits();"> S.I.<br>
+    </div>
+  <div class="input">
+    Manning's n value   <input type="number" id="n" class="textcenter"> <br>
+    Hydraulic Radius   <input type="number" id="R" class="textcenter"> <div class="label" id="lunits"> </div> <br>
+    Channel Slope   <input type="number" id="S" class="textcenter"> <div class="label" id="sunits"> </div> <br>
+    </div>
+    
+  <button value="Calculate" class="textcenter h1"
+          onClick="Calc();"><h2>Calculate Velocity</h2></button>
+    
+  <div class="output textcenter">
+  Answer:
+    <output class="output box textcenter" id="answer">
+    </output> <div class="label" id="vunits"> </div>
+  </div>
+    <br>
+    <image align="center" src="https://www.openchannelflow.com/assets/uploads/blog_images/isco-mannings-equation.jpg" alt="Manning's Equation Visual"/>
+    
+</body>
+</html>

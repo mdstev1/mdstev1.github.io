@@ -1,0 +1,92 @@
+body{
+ background-color: lightblue
+}
+ 
+h1{
+ color: blue;
+ font-family: Georgia;
+ text-transform: uppercase;
+ text-align: center;
+}
+h2{
+ color: red;
+ font-family: cursive;
+}
+p{
+ font-family: Times New Roman;
+}
+.bold{
+ font-weight: bold;
+}
+.small{
+ font-size: 60%;
+}
+.capitalize{
+  text-transform: uppercase;
+}
+.textcenter{
+ text-align: center;
+}
+.textleft, .home{
+ text-align: left;
+}
+img {
+ border-radius: 4px;
+ padding: 5px;
+ position: relative;
+ right: 0;
+ max-height: 100%;
+ object-fit: contain;
+}
+div{
+}
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+.header{
+ overflow: hidden;
+ background-color: #f1f1f1;
+ padding: 20px 10px;
+}
+.Michael, .Izaak, .Bryce{
+ background-color: lightyellow;
+ position: relative;
+ vertical-align: top;
+ width: 32.2%;
+ text-align: left;
+ display: inline-block;
+ padding: 5px;
+ border: 1px solid;
+}
+.output, .input, .convert{
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  max-width: 30%;
+  display: inline-block;
+  padding: 10px;
+}
+.box{
+  width: 150px;
+  border: 1px solid;
+}
+button{
+  width: 100px;
+}
+#map, html, body{
+  height: 100%;
+  margin: 5;
+  padding: 0;
+}
+.label{
+  position: relative;
+  text-align: left;
+  display: inline-block;
+}
+.incrfontsize{
+  font-size: 150%;
+}
+#map { 
+  height: 750px;
+  width: 99%;
+}
