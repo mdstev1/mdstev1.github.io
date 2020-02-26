@@ -6,7 +6,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         }).addTo(map);
 
 
-var wmsLayer = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-c1f80959149746db8eb3a99b5da79ec8/wms?', {
+var wmsLayer = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-f1b2fdffc3e541c7875a1d0a889f80c0/wms?', {
   layers: 'Polygons,Points',
   format: 'image/png',
   transparent: true
