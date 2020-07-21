@@ -1,4 +1,4 @@
 AuthType Basic  
 AuthName "restricted area"  
-AuthUserFile /mdstev1/mdstev1.github.io/.htpasswd  
+AuthUserFile mdstev1/mdstev1.github.io/.htpasswd  
 require valid-user
